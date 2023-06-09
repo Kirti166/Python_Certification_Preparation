@@ -1,0 +1,237 @@
+Assignment 1.1
+
+****Find and read 20 interview questions for Data Types, Operators, Conditional Statements, Looping Statements, Functions.****
+
+1) What are the basic data types in Python?
+
+A) The basic data types in Python include integers, floats, booleans, strings, and complex numbers. 
+   Additionally, Python also has built-in data types like lists, tuples, dictionaries, and sets.
+
+
+2) Explain the difference between mutable and immutable data types in Python.
+
+A) Mutable data types in Python are those that can be modified after they are created, such as lists, dictionaries, and sets. 
+   Immutable data types, on the other hand, cannot be changed once they are created, such as integers, floats, booleans, and strings.
+
+
+3) How can you determine the data type of a variable in Python?
+
+A) To determine the data type of a variable in Python, you can use the built-in function type(). 
+   For example:
+
+      x = 10
+      print(type(x))  # Output: <class 'int'>
+
+      y = "Hello"
+      print(type(y))  # Output: <class 'str'>
+
+      z = [1, 2, 3]
+      print(type(z))  # Output: <class 'list'>
+
+
+4) What is type casting, and how can you perform it in Python?
+
+A) Type casting, also known as type conversion, is the process of converting a value from one data type to another. 
+   In Python, you can perform type casting using built-in functions like int(), float(), str(), bool(), etc. 
+   For example:
+
+      x = "10"
+      y = int(x)
+      print(y)  # Output: 10
+
+      z = 3.14
+      w = int(z)
+      print(w)  # Output: 3
+
+
+5) Explain the difference between the "==" and "is" operators in Python. 
+
+A) In Python, the "==" operator is used for value equality comparison. It checks if the values of two operands are equal. 
+   On the other hand, the "is" operator checks if two variables refer to the same object in memory. It compares the identity of the objects. 
+   For example:
+
+      x = [1, 2, 3]
+      y = [1, 2, 3]
+
+      print(x == y)  # Output: True
+      print(x is y)  # Output: False
+
+
+6) What is operator precedence, and how does it affect the evaluation of expressions?
+
+A) Operator Precedence determines the order in which operators are evaluated in an expression. It determines which operations are performed first. 
+   For example, in the expression 2 + 3 * 4, the multiplication operator (*) has higher precedence than the addition operator (+), 
+   so the multiplication is performed first. If you want to change the order of evaluation, you can use parentheses.
+   PEMDAS is the order used in evaluating expressions.
+
+
+7) How does the "in" operator work in Python? Provide an example.
+
+A) The "in" operator is used in Python to check if a value is present in a sequence (like a string, list, tuple, or set). 
+   It returns a boolean value (True or False).
+   For example:
+
+      fruits = ["apple", "banana", "orange"]
+      print("apple" in fruits)  # Output: True
+      print("grape" in fruits)  # Output: False
+
+
+8) What are the bitwise operators in Python, and when are they used?
+
+A) Bitwise operators in Python include AND (&), OR (|), XOR (^), NOT (~), left shift (<<), and right shift (>>).
+   They are used to perform operations on individual bits of integers.
+
+
+9) What is the purpose of the if-else statement in Python?
+
+A) The if-else statement in Python is used for conditional execution. It allows you to execute a block of code if a certain condition is true. 
+   If the condition is false, the code block inside the else statement is executed.
+   For example:
+
+      x = 10
+      if x > 5:
+          print("x is greater than 5")
+      else:
+          print("x is not greater than 5")
+
+
+10) How can you chain multiple conditions using logical operators in Python?
+
+A)  In Python, you can chain multiple conditions using logical operators like and, or, and not.
+    For example:
+
+      x = 10
+      y = 20
+      if x > 5 and y < 30:
+          print("Both conditions are true")
+
+      if x > 5 or y > 30:
+          print("At least one condition is true")
+
+      if not x == 0:
+          print("x is not zero")
+
+
+11) Explain the difference between the "if" statement and the "if-elif" statement.
+
+A)  The "if" statement is used to execute a block of code if a condition is true. The "if-elif" statement allows you to test multiple conditions and 
+    execute different blocks of code based on the first condition that evaluates to true. It is used when there are multiple mutually exclusive conditions. 
+    For example:
+
+      x = 10
+      if x == 5:
+          print("x is 5")
+      elif x == 10:
+          print("x is 10")
+      else:
+          print("x is neither 5 nor 10")
+
+
+12) What is a ternary operator, and how is it used in Python?
+
+A)  A ternary operator is a concise way to write an if-else statement in a single line. It evaluates a condition and returns one of two values based on 
+    the result of the condition. The syntax is value_if_true if condition else value_if_false. 
+    For example:
+
+      x = 10
+      result = "Even" if x % 2 == 0 else "Odd"
+      print(result)  # Output: Even
+
+
+13) What is the difference between the "for" loop and the "while" loop in Python?
+
+A)  The "for" loop is used to iterate over a sequence (such as a string, list, tuple, or range) or any iterable object. 
+    It executes a block of code for each item in the sequence. The number of iterations is predetermined. On the other hand, 
+    the "while" loop continues executing a block of code as long as a condition remains true. The number of iterations can vary based on the condition. 
+    For example:
+
+      # for loop
+      fruits = ["apple", "banana", "orange"]
+      for fruit in fruits:
+          print(fruit)
+
+      # while loop
+      count = 0
+      while count < 5:
+          print(count)
+          count += 1
+
+
+14) How can you skip the current iteration and continue to the next iteration in a loop?
+
+A)  To skip the current iteration and continue to the next iteration in a loop, you can use the "continue" statement. 
+    It allows you to bypass the remaining code in the current iteration and move to the next iteration. 
+    For example:
+
+      for i in range(10):
+          if i == 3:
+              continue
+          print(i)
+
+
+15) Explain the purpose of the "range" function in Python loop statements.
+
+A)  The "range" function in Python is used in loop statements to generate a sequence of numbers. 
+    It takes one, two, or three arguments representing the start, stop, and step values. 
+    It returns an iterable object that produces the sequence of numbers. 
+    For example:
+
+      for i in range(1, 6):
+          print(i)  # Output: 1 2 3 4 5
+
+      for i in range(1, 10, 2):
+          print(i)  # Output: 1 3 5 7 9
+
+
+16) What is an infinite loop, and how can you break out of it?
+
+A)  An infinite loop is a loop that runs indefinitely because its exit condition is never satisfied. It can be created by omitting or 
+    setting a condition that is always true. To break out of an infinite loop, you can use the "break" statement. 
+    For example
+
+        while True:
+            user_input = input("Enter a value (type 'exit' to quit): ")
+            if user_input == "exit":
+                break
+            else:
+                print("You entered:", user_input)
+
+
+17) What is a function in Python, and why is it used?
+
+A) A function in Python is a reusable block of code that performs a specific task. 
+   It encapsulates a set of instructions and can take input arguments, perform computations, and return a result.
+
+
+18) How do you define a function in Python?
+
+A)  To define a function in Python, you use the "def" keyword followed by the function name, 
+    a pair of parentheses containing any parameters, and a colon. The function body is indented below the definition. 
+    For example:
+
+      def greet(name):
+          print("Hello, " + name + "!")
+
+      def add_numbers(x, y):
+          return x + y 
+
+
+19) What is the difference between a parameter and an argument in a function?
+
+A)  A parameter is a variable in a functions definition, whereas an argument is the actual value passed to the function when it is called.
+    Parameters are placeholders for arguments.
+
+
+20) Explain the concept of recursion and how it can be used in Python functions.
+
+A) Recursion is the process of a function calling itself. In Python, you can write recursive functions that solve problems by breaking them down
+   into smaller subproblems. Recursion involves two components: a base case that defines when the recursion stops, and a recursive call that calls the function 
+   again with a smaller input. 
+   For example:
+
+      def factorial(n):
+          if n == 0:
+              return 1
+          else:
+              return n * factorial(n - 1)
+
